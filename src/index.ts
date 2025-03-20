@@ -7,12 +7,15 @@ class Product {
   price: number;
 }
 
+
+
 class User {
   constructor(name: string) {
     this.name = name;
   }
   name: string;
   products: Product[] = [];
+  
   addProduct(newProduct: Product) {
     this.products.push(newProduct);
   }
